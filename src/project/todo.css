@@ -1,0 +1,141 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 50%;
+ margin: auto;
+ margin-top: 100px;
+  }
+  
+  
+  .app.light {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .app.light .todo-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+
+  .app.dark {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  .app.dark .todo-item {
+    background-color: #444;
+    border: 1px solid #555;
+  }
+  
+ 
+  header {
+   text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  header button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff00a6;
+    color: white;
+  }
+  
+  header button:hover {
+    background-color: #f3a4d1;
+  }
+  
+ 
+  .todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+  margin-left: 160px;
+  }
+  
+  .todo-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+  }
+  
+  .todo-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .todo-input button:hover {
+    background-color: #218838;
+  }
+  
+ 
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    margin-left: 160px;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .todo-item span {
+    cursor: pointer;
+  }
+  
+  .todo-item span:hover {
+    text-decoration: underline;
+  }
+  
+  .todo-item.completed span {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .todo-item button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .todo-item button:hover {
+    background-color: #c82333;
+  }
+  
